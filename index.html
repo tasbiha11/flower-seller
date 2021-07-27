@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Seller</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/d16d567c69.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,23 +28,25 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active text-white" aria-current="page" href="#Home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active text-white" aria-current="page" href="#">About Us</a>
+                                    <a class="nav-link active text-white" aria-current="page"
+                                        href="#Photo Gallery">Photo Gallery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active text-white" aria-current="page" href="#">Photo Gallery</a>
+                                    <a class="nav-link active text-white" aria-current="page" href="#About Us">About
+                                        Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active text-white" aria-current="page" href="#">Contact Us</a>
+                                    <a class="nav-link active text-white" aria-current="page" href="#Join Us">Join Us
+                                        !</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active text-white" aria-current="page" href="#">Our Goals</a>
+                                    <a class="nav-link active text-white" aria-current="page" href="#Contact Us">Contact
+                                        Us</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active text-white" aria-current="page" href="#">Join Us !</a>
-                                </li>
+
 
 
 
@@ -62,7 +66,7 @@
         <!-- Home Area -->
         <section class="container">
 
-            <h1 class="text-danger fw-bold mt-5">Home</h1>
+            <h1 class="text-danger fw-bold mt-5" id="Home">Home</h1>
             <div>
                 <div class="row gx-5 row-cols-1 row-cols-md-3 d-flex justify-content-end ">
                     <div class="col shadow-sm p-3 mb-5 bg-body">
@@ -114,12 +118,11 @@
             </div>
         </section>
 
-        <!-- About Us -->
-        <section>
-            <div class="w-50 ms-5 ps-3">
-                <h1 class="mt-5 text-danger fw-bold mb-3">Photo Gallery</h1>
-                <!-- image slider -->
-                <div>
+        <!-- Photo Gallery -->
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <h1 class="text-danger fw-bold" id="Photo Gallery">Photo Gallery</h1>
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -152,25 +155,93 @@
                         </button>
                     </div>
                 </div>
+                <div class="col-lg-6 col-sm-12 col-12 mt-5 pt-5">
+                    <h1 class="text-danger fw-bold">Our Beautiful Gardens</h1>
+                    <p>Kensington Gardens, once the private gardens of Kensington Palace, are among the Royal Parks of
+                        London. The gardens are shared by the City of Westminster and the Royal Borough of Kensington
+                        and
+                        Chelsea and sit immediately to the west of Hyde Park, in western central London. The gardens
+                        cover
+                        an area of 107 hectares (265 acres).</p>
+                </div>
             </div>
+        </div>
 
 
-            <div class="w-50 mt-5 ms-5 ps-3">
-                <h3 class="text-danger fw-bold">Our Beautiful Locations</h3>
-                <p>Kensington Gardens, once the private gardens of Kensington Palace, are among the Royal Parks of
-                    London. The gardens are shared by the City of Westminster and the Royal Borough of Kensington
-                    and
-                    Chelsea and sit immediately to the west of Hyde Park, in western central London. The gardens
-                    cover
-                    an area of 107 hectares (265 acres).</p>
+        <!-- About Us -->
+
+        <div class="container">
+            <div class="row row-cols-1">
+                <div class="col">
+                    <h1 class="mt-5 text-danger fw-bold mb-3" id="About Us">About Us</h1>
+                    <p class="border border-danger p-5">
+                        After a job at another plant nursery, Robyn Walters was planning to sell a few flowers at a
+                        stand on Fourth Street and move out of town.
+
+                        That's when landscaper Art Escobedo, along with his dog, Shaniqua, proposed they make a go of
+                        the plant business 10 years ago.
+
+                        Walters saw an opportunity in a small outdoor section of a Price Chopper's on Fourth Street, and
+                        asked if she could sell flowers there before the grocery store closed.
+
+                        And so was born Viola's Flower Garden, the open-air East Route 66 plant nursery that sells
+                        shrubs, flowers, annuals, perennials, fertilizers, soil-improvers and trees. "It was not a
+                        planned business at all," Walters said, but it started a month after the idea was hatched.
+
+                        Viola's has built repeat customers and employees who stay for years.
+
+                        Growing from the former Kmart parking lot, Viola's moved to East Route 66 in 2006.
+
+                        The place is named for Walters' gardening grandmother, who was no longer alive when it opened,
+                        and was launched with the donated labor of friends and family.Customers go there primarily for
+                        the flowers, because they can get in and out easily, for the staff of gardeners who help select
+                        plants, and because they know Shaniqua, Walters and Escobedo said.
+                    </p>
+                </div>
+
             </div>
+        </div>
 
 
+        <!-- Join Us Form -->
+        <section class="container my-5">
+            <h1 class="mt-5 text-danger fw-bold mb-3" id="Join Us"> Join Us!</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label text-danger fw-bold">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label text-danger fw-bold">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
         </section>
+
+        <!-- Contact Us -->
+
+        <section class="container">
+            <h1 class="mt-5 text-danger fw-bold mb-3" id="Contact Us">Contact Us</h1>
+            <div class="d-flex justify-content-evenly my-5">
+                <a href=""><i class="fab fa-facebook">Facebook</i></a>
+                <a href=""><i class="fab fa-instagram-square">Instagram</i></a>
+                <a href=""><i class="fab fa-twitter-square">Twitter</i></a>
+                <a href=""><i class="fab fa-youtube">Youtube</i></a>
+            </div>
+        </section>
+
+
+
     </main>
 
-    <footer>
-
+    <footer class="d-flex justify-content-center align-items-center mt-5 pt-5">
+        <small>© Copyright 2021</small>
     </footer>
 
 
